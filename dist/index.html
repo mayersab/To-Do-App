@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <title>To-Do List</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"></div>
+    </nav>
+    
+    <main>
+        <aside>
+            <div class="today">
+                Today
+            </div>
+            <div class="projects">
+                <div class="projtitle">
+                    Projects
+                    <div class="addproj">+</div>
+                </div>
+                <ul class="projlist">
+                
+                </ul>
+            </div>
+
+        </aside>
+        <article class="todos">
+            <div class="todotitle">
+                Groceries
+            </div>
+            <div class="todoitems">Lettuce</div>
+            <div class="todoitems">Chips</div>
+            <div class="todoitems">Milk</div>
+            <div class="todoitems">Juice</div>
+            <div class="todoitems">Meat</div>
+
+        </article>
+    </main>
+
+
+    <div class="modalcont">
+        <div class="modal">
+            <div class="modalprojtitle">New Project</div>
+            <div class="modalproj">
+                <label id="projectlabel" for="name">Name:</label>
+                <input id="projectinput" type="text">
+                <span class="esc">X</span>
+                <div class="modalbtn">
+                    <button id="projsubmit">Submit</button>
+                    <button id="projcancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

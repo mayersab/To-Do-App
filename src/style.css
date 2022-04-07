@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 3rem;
+  background-color: #5e92e6;
+}
+.logo {
+  font-size: 3rem;
+  margin: 0 1rem;
+}
+main {
+  display: flex;
+  height: 100%;
+}
+aside {
+  cursor: pointer;
+  background-color: #f2f2f2;
+  height: 93.9vh;
+  width: 15%;
+  font-size: 1.5rem;
+}
+.today {
+  margin: 1rem 2rem;
+  padding: 5px;
+  border-radius: 5px;
+}
+.projects div {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 5px;
+}
+.addproj {
+  cursor: pointer;
+  background-color: red;
+}
+.projects {
+  margin: 1rem 2rem;
+}
+.projlist {
+  font-size: 1rem;
+  visibility: hidden;
+}
+.projlist-active {
+  visibility: visible;
+}
+.projlist li {
+  list-style-type: circle;
+  margin: 1rem 2rem;
+  border-radius: 5px;
+  padding: 5px;
+}
+article {
+  height: 93.9vh;
+  width: 85%;
+}
+.modalcont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+}
+.modalactive {
+  visibility: visible;
+}
+.modal {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  background-color: wheat;
+  height: 20rem;
+  width: 40rem;
+  border-radius: 10px;
+}
+.modalprojtitle {
+  display: flex;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  height: 30%;
+  width: 100%;
+  background-color: aqua;
+  padding: 1rem;
+}
+.modalproj {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-radius: 0 0 10px 10px;
+  background-color: lightcyan;
+  height: 70%;
+  width: 100%;
+  padding: 1rem;
+}
+.modalproj label {
+  margin: 2rem 0;
+}
+.modalproj input {
+  height: 2.5rem;
+}
+.modalproj span {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.modalbtn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.5rem 0;
+}
+#projsubmit {
+  margin: 0 5px;
+  padding: 0.5rem;
+}
+#projcancel {
+  margin: 0 5px;
+  padding: 0.5rem;
+}
+.todotitle {
+  background-color: red;
+  margin: 5rem 5rem 4rem 15rem;
+  font-size: 3rem;
+}
+.todoitems {
+  background-color: aqua;
+  padding: 1rem;
+  margin: 0 5rem 2rem 15rem;
+  font-size: 1.5rem;
+}
