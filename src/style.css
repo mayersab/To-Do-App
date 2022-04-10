@@ -131,7 +131,7 @@ article {
   padding: 0.5rem;
 }
 .todotitle {
-  background-color: red;
+  background-color: purple;
   margin: 5rem 5rem 4rem 15rem;
   font-size: 3rem;
 }
@@ -140,4 +140,14 @@ article {
   padding: 1rem;
   margin: 0 5rem 2rem 15rem;
   font-size: 1.5rem;
+}
+.addtodo {
+  padding: 1rem;
+  margin: 0 5rem 2rem 15rem;
+  background-color: bisque;
+}
+#todosubmit,
+#todocancel {
+  margin: 0 5px;
+  padding: 0.5rem;
 }
