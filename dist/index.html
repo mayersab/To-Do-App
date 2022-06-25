@@ -8,11 +8,10 @@
     <title>To-Do List</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">+</div>
-    </nav>
+    <nav></nav>
     
     <main>
+        <!--Project List-->
         <aside>
             <div class="today">
                 Today
@@ -28,25 +27,31 @@
             </div>
 
         </aside>
+
+        <!--Todos-->
         <article class="todos">
-            <div class="todotitle">
-                Groceries
+            <div class="todotitle"></div>
+
+            <div class="todocont">
+                
+                </div>
             </div>
-            <div class="todoitems">
-                <div>Lettuce</div>
-            </div>
-            <div class="addtodo">
+            
+            
+            <!--Add todos-->
+            <div class="addtodo">Add Task +</div>
+
+            <div class="addtodomodal">
                 <input id="todoinput" type="text">
                 <button id="todosubmit">Add</button>
                 <button id="todocancel">Cancel</button>
             </div>
-            <div class="addtodo">Add Task +</div>
             
 
         </article>
     </main>
 
-
+    <!--New Project Modal-->
     <div class="modalcont">
         <div class="modal">
             <div class="modalprojtitle">New Project</div>

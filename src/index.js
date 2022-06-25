@@ -1,12 +1,22 @@
-import { addProjModal, remProjModal, showProjList, addProject, windowRefresh } from "./navigationlisteners";
+import { addAProjectModal,
+        removeProjectModal,
+        showProjList,
+        addProject,
+        windowRefresh,
+        addTodoPopup,
+        removeTodoPopup,
+        viewTodosInAProject,} from "./navigationlisteners";
 
 
 
 
 windowRefresh()
 
-addProjModal()
-remProjModal()
+addAProjectModal()
+removeProjectModal()
 showProjList()
 addProject()
+addTodoPopup()
+removeTodoPopup()
+viewTodosInAProject()
 

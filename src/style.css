@@ -10,10 +10,6 @@ nav {
   height: 3rem;
   background-color: #5e92e6;
 }
-.logo {
-  font-size: 3rem;
-  margin: 0 1rem;
-}
 main {
   display: flex;
   height: 100%;
@@ -30,7 +26,7 @@ aside {
   padding: 5px;
   border-radius: 5px;
 }
-.projects div {
+.projtitle {
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
@@ -38,7 +34,6 @@ aside {
 }
 .addproj {
   cursor: pointer;
-  background-color: red;
 }
 .projects {
   margin: 1rem 2rem;
@@ -140,14 +135,40 @@ article {
   padding: 1rem;
   margin: 0 5rem 2rem 15rem;
   font-size: 1.5rem;
+  position: relative;
 }
+.removetodo {
+  font-size: 1rem;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
 .addtodo {
   padding: 1rem;
   margin: 0 5rem 2rem 15rem;
   background-color: bisque;
+  cursor: pointer;
+}
+.addtodoclicked {
+  display: none;
+}
+.addtodomodal {
+  padding: 1rem;
+  margin: 0 5rem 2rem 15rem;
+  background-color: bisque;
+  visibility: hidden;
+}
+.addtodomodalactive {
+  visibility: visible;
+}
+#todoinput {
+  height: 2rem;
+  width: 100%;
 }
 #todosubmit,
 #todocancel {
-  margin: 0 5px;
+  margin: 5px 5px;
   padding: 0.5rem;
 }
