@@ -1,7 +1,5 @@
-
 const projInput = document.querySelector('#projectinput')
 const projList = document.querySelector('.projlist')
-
 
 const saveLocalStorageProj = (projName) => {
     let projects = []

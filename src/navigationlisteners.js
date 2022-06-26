@@ -1,5 +1,5 @@
 import "./style.css"
-import { appendProject, drawListItem, saveLocalStorageProj } from "./navigationDOM"
+import { appendProject, drawListItem } from "./navigationDOM"
 
 import { addtodomodal, removeTodoModal, viewTodos, pushTodo } from "./todologic"
 
@@ -9,6 +9,7 @@ const projModal = document.querySelector('.modalcont')
 const escProjModal = document.querySelector('.esc')
 
 const projSubmitBtn = document.querySelector('#projsubmit')
+const projCancelBtn = document.querySelector('#projcancel')
 
 const projects = document.querySelector('.projtitle')
 const projList = document.querySelector('.projlist')
@@ -22,9 +23,6 @@ const todoInput = document.querySelector('#todoinput')
 const submitTaskBtn = document.querySelector('#todosubmit')
 const cancelTaskBtn = document.querySelector('#todocancel')
 
-const remTodo = document.querySelector('.removetodo')
-
-
 
 // Creates and removes popup to add todos
 const addTodoPopup = () => {
@@ -35,8 +33,7 @@ const addTodoPopup = () => {
     
 const removeTodoPopup = () => {
     submitTaskBtn.addEventListener('click', (e) => {
-        if (todoInput.value === '') {alert('Task cannot be empty')}
-        pushTodo()
+        todoInput.value !== '' ? pushTodo() : alert('Task cannot be empty')
         removeTodoModal()
     })
     cancelTaskBtn.addEventListener('click', (e) => {
@@ -47,8 +44,9 @@ const removeTodoPopup = () => {
 // Draws HTML list items back to page on refresh
 const windowRefresh = () => {
     window.addEventListener('load', (e) => {
-        drawListItem()
         
+        drawListItem()
+
     })
 }
 
@@ -63,6 +61,9 @@ const addAProjectModal = () => {
 // Allows you to exit modal by clicking "X"
 const removeProjectModal = () => {
     escProjModal.addEventListener('click', (e) => {
+        projModal.classList.remove('modalactive')
+    })
+    projCancelBtn.addEventListener('click', (e) => {
         projModal.classList.remove('modalactive')
     })
 }

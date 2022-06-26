@@ -2,12 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Rubik", sans-serif;
 }
 nav {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   height: 3rem;
+  font-size: 2em;
   background-color: #5e92e6;
 }
 main {
@@ -21,16 +23,15 @@ aside {
   width: 15%;
   font-size: 1.5rem;
 }
-.today {
-  margin: 1rem 2rem;
-  padding: 5px;
-  border-radius: 5px;
-}
 .projtitle {
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
   padding: 5px;
+}
+.projtitle:hover {
+  background-color: #dedcdc;
+  border-radius: 5px;
 }
 .addproj {
   cursor: pointer;
@@ -46,10 +47,14 @@ aside {
   visibility: visible;
 }
 .projlist li {
-  list-style-type: circle;
+  list-style: none;
   margin: 1rem 2rem;
   border-radius: 5px;
   padding: 5px;
+}
+.projlist li:hover {
+  background-color: #dedcdc;
+  border-radius: 5px;
 }
 article {
   height: 93.9vh;
@@ -87,24 +92,26 @@ article {
   border-radius: 10px 10px 0 0;
   height: 30%;
   width: 100%;
-  background-color: aqua;
+  background-color: #5e92e6;
   padding: 1rem;
+  font-size: 1.25em;
 }
 .modalproj {
   display: flex;
   flex-direction: column;
   justify-content: start;
   border-radius: 0 0 10px 10px;
-  background-color: lightcyan;
-  height: 70%;
+  background-color: #f2f2f2;
+  font-size: 1.25em;
   width: 100%;
   padding: 1rem;
 }
 .modalproj label {
   margin: 2rem 0;
 }
-.modalproj input {
-  height: 2.5rem;
+#projectinput {
+  height: 2em;
+  border: none;
 }
 .modalproj span {
   cursor: pointer;
@@ -117,21 +124,24 @@ article {
   justify-content: flex-end;
   margin: 1.5rem 0;
 }
-#projsubmit {
-  margin: 0 5px;
-  padding: 0.5rem;
-}
+#projsubmit,
 #projcancel {
-  margin: 0 5px;
+  margin: 5px 5px;
   padding: 0.5rem;
+  border: none;
+  font-size: 1em;
+  background-color: #f2f2f2;
 }
+
 .todotitle {
-  background-color: purple;
+  border-bottom: #5e92e6 solid 2px;
   margin: 5rem 5rem 4rem 15rem;
   font-size: 3rem;
 }
 .todoitems {
-  background-color: aqua;
+  background-color: #f2f2f2;
+  border: #5e92e6 solid 2px;
+  border-radius: 5px;
   padding: 1rem;
   margin: 0 5rem 2rem 15rem;
   font-size: 1.5rem;
@@ -148,8 +158,12 @@ article {
 .addtodo {
   padding: 1rem;
   margin: 0 5rem 2rem 15rem;
-  background-color: bisque;
   cursor: pointer;
+  font-size: 1.5em;
+}
+.addtodo:hover {
+  background-color: #f2f2f2;
+  border-radius: 5px;
 }
 .addtodoclicked {
   display: none;
@@ -157,7 +171,9 @@ article {
 .addtodomodal {
   padding: 1rem;
   margin: 0 5rem 2rem 15rem;
-  background-color: bisque;
+  background-color: #f2f2f2;
+  border: #5e92e6 solid 2px;
+  border-radius: 5px;
   visibility: hidden;
 }
 .addtodomodalactive {
@@ -166,9 +182,13 @@ article {
 #todoinput {
   height: 2rem;
   width: 100%;
+  border: none;
 }
 #todosubmit,
 #todocancel {
   margin: 5px 5px;
   padding: 0.5rem;
+  border: none;
+  font-size: 1.25em;
+  background-color: #f2f2f2;
 }
