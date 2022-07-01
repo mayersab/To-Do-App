@@ -19,13 +19,14 @@ main {
 aside {
   background-color: #f2f2f2;
   height: 93.9vh;
-  width: 15%;
+  width: 20%;
   font-size: 1.5rem;
 }
 @media screen and (max-width: 600px) {
   aside {
     width: 30%;
     font-size: 1.25rem;
+    position: relative;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
@@ -46,6 +47,14 @@ aside {
   justify-content: space-between;
   border-radius: 5px;
   padding: 5px;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .projtitle {
+    font-size: 1rem;
+    position: absolute;
+    left: 1px;
+  }
 }
 .projtitle:hover {
   background-color: #dedcdc;
@@ -54,6 +63,12 @@ aside {
 .addproj {
   cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+  .addproj {
+    position: absolute;
+    right: 1rem;
+  }
+}
 .projects {
   margin: 1rem 2rem;
 }
@@ -61,6 +76,14 @@ aside {
   font-size: 1rem;
   visibility: hidden;
 }
+@media screen and (max-width: 600px) {
+  .projlist {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+  }
+}
+
 .projlist-active {
   visibility: visible;
 }
@@ -70,13 +93,18 @@ aside {
   border-radius: 5px;
   padding: 5px;
 }
+@media screen and (max-width: 600px) {
+  .projlist li {
+    margin: 1rem 0.75rem;
+  }
+}
 .projlist li:hover {
   background-color: #dedcdc;
   border-radius: 5px;
 }
 article {
   height: 93.9vh;
-  width: 85%;
+  width: 80%;
 }
 @media screen and (max-width: 600px) {
   article {
@@ -189,6 +217,7 @@ article {
     margin: 3rem 1rem;
   }
 }
+
 .todoitems {
   background-color: #f2f2f2;
   border: #5e92e6 solid 2px;
@@ -256,6 +285,21 @@ article {
   border: #5e92e6 solid 2px;
   border-radius: 5px;
   visibility: hidden;
+}
+@media screen and (max-width: 600px) {
+  .addtodomodal {
+    margin: 1rem 1rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .addtodomodal {
+    margin: 1rem 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .addtodo {
+    margin: 1rem 1rem;
+  }
 }
 .addtodomodalactive {
   visibility: visible;
